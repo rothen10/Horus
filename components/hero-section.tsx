@@ -77,7 +77,7 @@ export default function HeroSection() {
               {/* Stats */}
               <div className="flex gap-8 pt-8 border-t border-border">
                 <div>
-                  <div className="text-2xl font-bold text-accent">500+</div>
+                  <div className="text-2xl font-bold text-accent">10+</div>
                   <div className="text-sm text-foreground/60">{t('hero.stats.projects')}</div>
                 </div>
                 <div>
@@ -85,7 +85,7 @@ export default function HeroSection() {
                   <div className="text-sm text-foreground/60">{t('hero.stats.satisfaction')}</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-accent">15+</div>
+                  <div className="text-2xl font-bold text-accent">5+</div>
                   <div className="text-sm text-foreground/60">{t('hero.stats.team')}</div>
                 </div>
               </div>

@@ -112,19 +112,19 @@ export default function AboutSection() {
               {/* Content */}
               <div className="relative z-10 text-center space-y-8 p-8">
                 <div className="space-y-2">
-                  <div className="text-5xl font-bold text-accent">15+</div>
+                  <div className="text-5xl font-bold text-accent">6+</div>
                   <div className="text-foreground/60">Années d'Excellence</div>
                 </div>
 
                 <div className="border-t border-b border-accent/30 py-8 space-y-4">
                   <div className="space-y-2">
-                    <div className="text-4xl font-bold text-accent">500+</div>
+                    <div className="text-4xl font-bold text-accent">16+</div>
                     <div className="text-foreground/60">{t('about.stats.clients')}</div>
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-accent">1000+</div>
+                  <div className="text-4xl font-bold text-accent">20+</div>
                   <div className="text-foreground/60">{t('about.stats.drones')}</div>
                 </div>
               </div>

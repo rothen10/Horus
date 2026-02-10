@@ -7,17 +7,17 @@ import { Star } from 'lucide-react'
 const testimonials = [
   {
     id: 1,
-    name: 'Marc Dupont',
+    name: 'Kamdem evrard',
     role: 'Directeur Agro Tech',
     company: 'Ferme Moderne SA',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
     testimonial:
-      'DroneElite a transformé notre approche agricole. Les solutions proposées ont augmenté notre rendement de 35% en une saison.',
+      'Horus a transformé notre approche agricole. Les solutions proposées ont augmenté notre rendement de 35% en une saison.',
     rating: 5,
   },
   {
     id: 2,
-    name: 'Sarah Martin',
+    name: 'Sarah',
     role: 'Responsable Construction',
     company: 'BTP Solutions',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
@@ -27,22 +27,22 @@ const testimonials = [
   },
   {
     id: 3,
-    name: 'Jean Leclerc',
+    name: 'Jean Essoh',
     role: 'Gestionnaire Propriété',
     company: 'Immobilier Prestige',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
     testimonial:
-      'Les vidéos aériennes produites par DroneElite ont accéléré nos ventes de 40%. Qualité cinématographique exceptionnelle.',
+      'Les vidéos aériennes produites par Horus ont accéléré nos ventes de 40%. Qualité cinématographique exceptionnelle.',
     rating: 5,
   },
   {
     id: 4,
-    name: 'Claire Bernard',
+    name: 'Marie Claire',
     role: 'Coordinatrice Événements',
     company: 'Events Luxe',
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop',
     testimonial:
-      'Pour nos événements corporatifs, DroneElite apporte toujours une touche spectaculaire. Professionnel et innovant.',
+      'Pour nos événements corporatifs, Horus apporte toujours une touche spectaculaire. Professionnel et innovant.',
     rating: 5,
   },
 ]
@@ -198,11 +198,11 @@ export default function TestimonialsSection() {
             <div className="text-foreground/60 mt-2">Satisfaction Client</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-accent">500+</div>
+            <div className="text-4xl font-bold text-accent">16+</div>
             <div className="text-foreground/60 mt-2">Projets Réalisés</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-accent">50+</div>
+            <div className="text-4xl font-bold text-accent">5+</div>
             <div className="text-foreground/60 mt-2">Partenaires Majeurs</div>
           </div>
         </div>

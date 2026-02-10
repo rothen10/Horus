@@ -11,9 +11,13 @@ const geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Horus - Services Professionnels de Drones à Douala',
+  icons: {
+      icon: "/logo.png", // Ton PNG comme favicon
+      apple: "/logo.png", // Pour iOS
+    },
   description:
     'Horus : solutions complètes de services de drones à Douala, Cameroun. Ventes, maintenance, formations et inspection aérienne professionnelle.',
-  generator: 'v0.app',
+  generator: 'Ro10',
   keywords: [
     'drone',
     'drones Douala',

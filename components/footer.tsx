@@ -52,9 +52,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6 group">
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                <span className="text-accent-foreground font-bold text-lg">D</span>
+                <span className="text-accent-foreground font-bold text-lg">H</span>
               </div>
-              <span className="text-lg font-bold text-foreground">DroneElite</span>
+              <span className="text-lg font-bold text-foreground">Horus</span>
             </Link>
 
             <p className="text-foreground/70 text-sm leading-relaxed mb-6">
@@ -107,17 +107,17 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs text-foreground/60">Téléphone</div>
-              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">+33 1 23 45 67 89</div>
+              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">+237 656 128 888</div>
             </div>
           </a>
 
-          <a href="mailto:contact@droneelite.fr" className="flex items-center gap-3 group">
+          <a href="mailto:contact@Horus.fr" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center transition-colors">
               <Mail className="w-5 h-5 text-accent" />
             </div>
             <div>
               <div className="text-xs text-foreground/60">Email</div>
-              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">contact@droneelite.fr</div>
+              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">contact@Horus.fr</div>
             </div>
           </a>
 
@@ -127,7 +127,7 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs text-foreground/60">Adresse</div>
-              <div className="text-sm font-semibold text-foreground">75001 Paris, France</div>
+              <div className="text-sm font-semibold text-foreground">75001 Douala, Cameroun</div>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-sm text-foreground/60">
-            © {currentYear} DroneElite. Tous droits réservés.
+            © {currentYear} Horus. Tous droits réservés.
           </div>
 
           <div className="flex items-center gap-6">

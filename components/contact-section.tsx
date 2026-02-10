@@ -167,7 +167,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="Jean"
+                  placeholder="Rothen"
                 />
               </div>
 
@@ -180,7 +180,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="Dupont"
+                  placeholder="Soh"
                 />
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="jean@example.com"
+                  placeholder="rothen@example.com"
                 />
               </div>
 
@@ -208,7 +208,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="+33 1 23 45 67 89"
+                  placeholder="+237 656 128 888"
                 />
               </div>
             </div>

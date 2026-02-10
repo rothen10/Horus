@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Le site DroneElite dispose d'un système complet de gestion du thème (Dark/Light mode) et de langue (Français/Anglais). Ces fonctionnalités sont implémentées avec des React Contexts et sont entièrement client-side.
+Le site Horus dispose d'un système complet de gestion du thème (Dark/Light mode) et de langue (Français/Anglais). Ces fonctionnalités sont implémentées avec des React Contexts et sont entièrement client-side.
 
 ## Architecture
 
@@ -32,37 +32,31 @@ Le site DroneElite dispose d'un système complet de gestion du thème (Dark/Ligh
 ### Basculer le thème
 
 ```tsx
-'use client'
-import { useTheme } from '@/lib/theme-context'
+"use client";
+import { useTheme } from "@/lib/theme-context";
 
 export default function MyComponent() {
-  const { theme, toggleTheme } = useTheme()
-  
-  return (
-    <button onClick={toggleTheme}>
-      Thème actuel: {theme}
-    </button>
-  )
+  const { theme, toggleTheme } = useTheme();
+
+  return <button onClick={toggleTheme}>Thème actuel: {theme}</button>;
 }
 ```
 
 ### Basculer la langue
 
 ```tsx
-'use client'
-import { useLanguage } from '@/lib/language-context'
+"use client";
+import { useLanguage } from "@/lib/language-context";
 
 export default function MyComponent() {
-  const { language, toggleLanguage, t } = useLanguage()
-  
+  const { language, toggleLanguage, t } = useLanguage();
+
   return (
     <>
-      <p>{t('header.services')}</p>
-      <button onClick={toggleLanguage}>
-        Langue actuelle: {language}
-      </button>
+      <p>{t("header.services")}</p>
+      <button onClick={toggleLanguage}>Langue actuelle: {language}</button>
     </>
-  )
+  );
 }
 ```
 
@@ -103,8 +97,9 @@ export const translations = {
 ```
 
 3. Utiliser dans le composant:
+
 ```tsx
-<span>{t('header.newKey')}</span>
+<span>{t("header.newKey")}</span>
 ```
 
 ## Thème clair (Light Mode)
@@ -114,11 +109,13 @@ export const translations = {
 Le système utilise des CSS variables définis dans `globals.css`:
 
 **Dark Mode (par défaut)**
+
 - Background: #0d0d0d
 - Foreground: #f2f2f2
 - Accent: #FFA500 (orange-jaune)
 
 **Light Mode**
+
 - Background: #f5f5f5
 - Foreground: #0d0d0d
 - Accent: #FFA500 (identique)
@@ -128,17 +125,17 @@ Le système utilise des CSS variables définis dans `globals.css`:
 Les styles spécifiques à un thème peuvent être appliqués avec:
 
 ```tsx
-'use client'
-import { useTheme } from '@/lib/theme-context'
+"use client";
+import { useTheme } from "@/lib/theme-context";
 
 export default function Component() {
-  const { theme } = useTheme()
-  
+  const { theme } = useTheme();
+
   return (
-    <div className={theme === 'dark' ? 'bg-slate-900' : 'bg-slate-50'}>
+    <div className={theme === "dark" ? "bg-slate-900" : "bg-slate-50"}>
       Contenu
     </div>
-  )
+  );
 }
 ```
 
@@ -170,39 +167,44 @@ Au premier chargement:
 ### Ajouter un nouveau composant avec traductions
 
 ```tsx
-'use client'
+"use client";
 
-import { useLanguage } from '@/lib/language-context'
-import { useTheme } from '@/lib/theme-context'
+import { useLanguage } from "@/lib/language-context";
+import { useTheme } from "@/lib/theme-context";
 
 export default function NewComponent() {
-  const { t, language } = useLanguage()
-  const { theme } = useTheme()
-  
+  const { t, language } = useLanguage();
+  const { theme } = useTheme();
+
   return (
-    <div className={`
-      ${theme === 'dark' ? 'bg-slate-900' : 'bg-white'}
+    <div
+      className={`
+      ${theme === "dark" ? "bg-slate-900" : "bg-white"}
       p-4 rounded-lg
-    `}>
-      <h2>{t('mySection.title')}</h2>
-      <p>{t('mySection.description')}</p>
+    `}
+    >
+      <h2>{t("mySection.title")}</h2>
+      <p>{t("mySection.description")}</p>
     </div>
-  )
+  );
 }
 ```
 
 ## Dépannage
 
 ### Les traductions ne changent pas au changement de langue
+
 - Vérifier que le composant utilise `useLanguage()`
 - Vérifier que `t()` est utilisé pour chaque texte
 - Vérifier que les clés existent dans `translations.ts`
 
 ### Le thème ne persiste pas
+
 - Vérifier que localStorage est activé
 - Vérifier que le provider enveloppe le composant
 - Vérifier les erreurs console
 
 ### Contenu clignotant au rechargement
+
 - C'est normal au premier chargement (hydratation React)
 - Le système ignore le rendu jusqu'au montage complet

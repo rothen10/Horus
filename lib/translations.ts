@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       main: 'Envolez-vous vers l\'Excellence',
-      subtitle: 'Explorez le futur avec DroneElite. Solutions drone premium pour professionnels exigeants.',
+      subtitle: 'Explorez le futur avec Horus. Solutions drone premium pour professionnels exigeants.',
       cta: 'Commencer maintenant',
       stats: {
         projects: 'Projets réussis',
@@ -42,7 +42,7 @@ export const translations = {
     },
     about: {
       title: 'Qui sommes-nous ?',
-      description: 'DroneElite est votre partenaire de confiance en technologie drone depuis 10 ans.',
+      description: 'Horus est votre partenaire de confiance en technologie drone depuis 10 ans.',
       mission: 'Notre mission',
       missionText: 'Démocratiser l\'accès à la technologie drone professionnelle en offrant qualité, expertise et innovation.',
       values: {
@@ -71,7 +71,7 @@ export const translations = {
     },
     testimonials: {
       title: 'Ils nous font confiance',
-      description: 'Écoutez ce que nos clients disent de DroneElite.',
+      description: 'Écoutez ce que nos clients disent de Horus.',
       trustMetrics: 'clients satisfaits',
     },
     contact: {
@@ -123,7 +123,7 @@ export const translations = {
     },
     hero: {
       main: 'Rise to Excellence',
-      subtitle: 'Explore the future with DroneElite. Premium drone solutions for demanding professionals.',
+      subtitle: 'Explore the future with Horus. Premium drone solutions for demanding professionals.',
       cta: 'Get Started',
       stats: {
         projects: 'Successful Projects',
@@ -155,7 +155,7 @@ export const translations = {
     },
     about: {
       title: 'About Us',
-      description: 'DroneElite has been your trusted partner in drone technology for 10 years.',
+      description: 'Horus has been your trusted partner in drone technology for 10 years.',
       mission: 'Our Mission',
       missionText: 'Democratize access to professional drone technology by offering quality, expertise and innovation.',
       values: {
@@ -184,7 +184,7 @@ export const translations = {
     },
     testimonials: {
       title: 'They Trust Us',
-      description: 'Hear what our clients say about DroneElite.',
+      description: 'Hear what our clients say about Horus.',
       trustMetrics: 'satisfied clients',
     },
     contact: {
