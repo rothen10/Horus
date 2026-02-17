@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
+import DroneCarousel from './drone-carousel'
 
 export default function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -29,6 +30,19 @@ export default function HeroSection() {
         ></div>
       </div>
 
+      {/* Background Videos */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <video
+          className="absolute right-0 top-0 w-1/2 h-full object-cover opacity-5"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/drone-footage-1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 h-screen flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
@@ -47,9 +61,9 @@ export default function HeroSection() {
 
               {/* Main Heading */}
               <h1 className="text-5xl md:text-7xl font-bold text-balance leading-tight">
-                <span className="text-foreground">{t('hero.main').split('\n')[0] || 'Envolez-vous vers'}</span>
+                <span className="text-foreground">Envolez-vous vers</span>
                 <br />
-                <span className="text-accent">{t('hero.main').split('\n')[1] || 'l\'Excellence'}</span>
+                <span className="text-accent">l'Excellence</span>
               </h1>
 
               {/* Description */}
@@ -92,7 +106,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Drone Image */}
+          {/* Drone Carousel */}
           <div
             className={`relative h-96 md:h-full flex items-center justify-center transition-all duration-1000 ${
               isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
@@ -103,21 +117,8 @@ export default function HeroSection() {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-accent/20 via-transparent to-transparent rounded-full blur-2xl"></div>
 
-              {/* Drone Image */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96">
-                <Image
-                  src="/drone.png"
-                  alt="Drone premium 3D"
-                  fill
-                  sizes="(max-width: 768px) 320px, 384px"
-                  className="object-contain drop-shadow-2xl"
-                  priority
-                  style={{
-                    animation: 'float 6s ease-in-out infinite',
-                    filter: 'drop-shadow(0 20px 40px rgba(255, 165, 0, 0.3))',
-                  }}
-                />
-              </div>
+              {/* Drone Carousel Component */}
+              <DroneCarousel />
 
               {/* Orbiting elements */}
               <div className="absolute inset-0 flex items-center justify-center">

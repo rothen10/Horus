@@ -16,7 +16,11 @@ body {
 
 /* Light mode background */
 html:not(.dark) body {
-  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+}
+
+html:not(.dark) {
+  color-scheme: light;
 }
 
 /* Custom scrollbar */
@@ -36,8 +40,17 @@ html:not(.dark) body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(39, 95%, 60%);
+  background: hsl(39, 95%, 50%);
   background-clip: content-box;
+}
+
+/* Light mode scrollbar */
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: hsl(39, 90%, 45%);
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: hsl(39, 90%, 40%);
 }
 
 /* Selection styling */
@@ -133,24 +146,25 @@ html {
 
 @layer base {
   :root {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    /* Light mode (default) */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
     --primary: 39 95% 54%;
-    --primary-foreground: 0 0% 8%;
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 0 0% 30%;
-    --muted-foreground: 0 0% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 70%;
+    --muted-foreground: 0 0% 45%;
     --accent: 39 95% 54%;
-    --accent-foreground: 0 0% 8%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 20%;
-    --input: 0 0% 16%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 85%;
+    --input: 0 0% 95%;
     --ring: 39 95% 54%;
     --chart-1: 39 95% 54%;
     --chart-2: 0 0% 60%;
@@ -160,6 +174,7 @@ html {
     --radius: 0.5rem;
   }
   .dark {
+    /* Dark mode */
     --background: 0 0% 8%;
     --foreground: 0 0% 95%;
     --card: 0 0% 12%;

@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
@@ -7,6 +8,16 @@ import { useLanguage } from '@/lib/language-context'
 export default function Footer() {
   const { t } = useLanguage()
   const currentYear = new Date().getFullYear()
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const footerLinks = {
     Services: [
@@ -155,11 +166,10 @@ export default function Footer() {
       {/* Back to Top Button */}
       <a
         href="#"
-        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all opacity-0 hover:opacity-100 pointer-events-none hover:pointer-events-auto"
-        style={{
-          opacity: typeof window !== 'undefined' && window.scrollY > 400 ? 1 : 0,
-          pointerEvents: typeof window !== 'undefined' && window.scrollY > 400 ? 'auto' : 'none',
-        }}
+        suppressHydrationWarning
+        className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all ${
+          showBackToTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

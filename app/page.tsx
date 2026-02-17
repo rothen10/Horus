@@ -1,5 +1,6 @@
 import Header from '@/components/header'
 import HeroSection from '@/components/hero-section'
+import PremiumServicesMain from '@/components/premium-services-main'
 import ServicesSection from '@/components/services-section'
 import AboutSection from '@/components/about-section'
 import GallerySection from '@/components/gallery-section'
@@ -12,6 +13,7 @@ export default function Home() {
     <main className="w-full min-h-screen bg-background text-foreground">
       <Header />
       <HeroSection />
+      <PremiumServicesMain />
       <ServicesSection />
       <AboutSection />
       <GallerySection />

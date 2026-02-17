@@ -1,17 +1,15 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import { projectsData } from '@/lib/projects-data'
 import { useLanguage } from '@/lib/language-context'
-
-const galleryItems = projectsData; // Declare galleryItems variable
+import { ArrowRight } from 'lucide-react'
+import ExpandableServiceCard from './expandable-service-card'
 
 export default function GallerySection() {
   const [isVisible, setIsVisible] = useState(false)
-  const [selectedFilter, setSelectedFilter] = useState('Tous')
-  const { t } = useLanguage()
+  const [selectedFilter, setSelectedFilter] = useState('surveys')
+  const { t, language } = useLanguage()
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,10 +27,23 @@ export default function GallerySection() {
     return () => observer.disconnect()
   }, [])
 
-  const categories = ['Tous', 'Agriculture', 'Industrie', 'Immobilier', 'Sécurité', 'Événementiel', 'Géomètre']
+  const servicesData = t('gallery.services') || {}
+  const filters = ['surveys', 'maintenance', 'training']
+  
+  const getServiceData = (serviceKey) => {
+    return servicesData[serviceKey] || null
+  }
 
-  const filteredItems =
-    selectedFilter === 'Tous' ? projectsData : projectsData.filter((item) => item.category === selectedFilter)
+  const getFilterLabel = (key) => {
+    const labels = {
+      surveys: t('gallery.filter.surveys'),
+      maintenance: t('gallery.filter.maintenance'),
+      training: t('gallery.filter.training'),
+    }
+    return labels[key] || key
+  }
+
+  const currentService = getServiceData(selectedFilter)
 
   return (
     <section id="gallery" className="relative w-full py-24 bg-background overflow-hidden">
@@ -47,91 +58,65 @@ export default function GallerySection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 rounded-full mb-4">
             <span className="w-2 h-2 bg-accent rounded-full"></span>
-            <span className="text-sm text-accent font-medium">Nos Réalisations</span>
+            <span className="text-sm text-accent font-medium">{language === 'fr' ? 'Nos Services' : 'Our Services'}</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-4">Galerie de Projets</h2>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            Explorez nos meilleures réalisations et découvrez les possibilités infinies de la technologie drone
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-4">{t('gallery.title')}</h2>
+          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">{t('gallery.description')}</p>
         </div>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
+          {filters.map((filter) => (
             <button
-              key={category}
-              onClick={() => setSelectedFilter(category)}
+              key={filter}
+              onClick={() => setSelectedFilter(filter)}
               className={`px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 ${
-                selectedFilter === category
+                selectedFilter === filter
                   ? 'bg-accent text-accent-foreground'
                   : 'bg-secondary text-foreground hover:border-accent border border-border'
               }`}
             >
-              {category}
+              {getFilterLabel(filter)}
             </button>
           ))}
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredItems.map((item, index) => (
-            <div
-              key={item.id}
-              className={`group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-accent transition-all duration-500 transform hover:scale-105 cursor-pointer ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
-              style={{
-                transitionDelay: isVisible ? `${index * 50}ms` : '0ms',
-              }}
-            >
-              {/* Image Container */}
-              <div className="relative w-full h-64 overflow-hidden bg-secondary">
-                <Image
-                  src={item.image || "/placeholder.svg"}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  unoptimized
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-              </div>
-
-              {/* Content */}
-              <div className="p-6 relative z-10">
-                <div className="inline-block px-3 py-1 bg-accent/20 text-accent text-xs font-semibold rounded-full mb-3">
-                  {item.category}
-                </div>
-
-                <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-foreground/70">{item.description}</p>
-
-                {/* Hidden Info on Hover */}
-                <Link href={`/projects/${item.id}`}>
-                  <div className="absolute inset-0 bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 p-6 cursor-pointer">
-                    <div className="text-center space-y-4">
-                      <h4 className="text-lg font-bold text-accent">{item.title}</h4>
-                      <p className="text-foreground/80">{item.description}</p>
-                      <button className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-full font-semibold hover:bg-accent/90 transition-all">
-                        Voir détails
-                      </button>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+        {/* Services Grid */}
+        {currentService && (
+          <div>
+            <div className="mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{currentService.title}</h3>
+              <p className="text-lg text-foreground/70">{currentService.description}</p>
             </div>
-          ))}
-        </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+              {currentService.items?.map((item, index) => (
+                <ExpandableServiceCard
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  details={item.details}
+                  benefits={item.benefits}
+                  index={index}
+                  isVisible={isVisible}
+                />
+              ))}
+            </div>
+
+
+          </div>
+        )}
 
         {/* CTA */}
-        <div className="text-center pt-12">
-          <p className="text-foreground/60 mb-6">Vous souhaitez un projet similaire?</p>
+        <div className="text-center pt-8 border-t border-border/50">
+          <p className="text-foreground/60 mb-6 mt-8">
+            {language === 'fr' ? 'Prêt à commencer votre projet ?' : 'Ready to start your project?'}
+          </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-accent-foreground rounded-full font-semibold hover:bg-accent/90 transition-all transform hover:scale-105"
           >
-            Demander un devis
+            {language === 'fr' ? 'Demander un devis' : 'Get a Quote'}
           </a>
         </div>
       </div>

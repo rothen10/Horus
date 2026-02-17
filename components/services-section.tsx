@@ -10,27 +10,11 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: Zap,
-      title: t('services.sales.title'),
-      description: t('services.sales.description'),
-      features: t('services.sales.features'),
-      color: 'accent',
-      cta: t('services.sales.cta'),
-    },
-    {
-      icon: Wrench,
-      title: t('services.maintenance.title'),
-      description: t('services.maintenance.description'),
-      features: t('services.maintenance.features'),
-      color: 'primary',
-      cta: t('services.maintenance.cta'),
-    },
-    {
       icon: BookOpen,
       title: t('services.training.title'),
       description: t('services.training.description'),
       features: t('services.training.features'),
-      color: 'muted',
+      color: 'accent',
       cta: t('services.training.cta'),
     },
   ]
@@ -70,14 +54,14 @@ export default function ServicesSection() {
             <span className="w-2 h-2 bg-accent rounded-full"></span>
             <span className="text-sm text-accent font-medium">Nos Expertise</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-4">Services Complèts & Intégrés</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-4">Formations Professionnelles</h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            De la sélection du matériel à la formation professionnelle, nous accompagnons votre croissance technologique
+            Développez vos compétences et maîtrisez les technologies de pointe avec nos formations certifiées et personnalisées
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon
             return (

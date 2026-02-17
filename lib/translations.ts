@@ -39,6 +39,29 @@ export const translations = {
         features: ['Formations agréées', 'Certification reconnue', 'Petit groupe', 'Suivi personnalisé'],
         cta: 'S\'inscrire à une formation',
       },
+      premium: {
+        construction: {
+          title: 'Surveillance et suivi des projets de construction',
+          intro: 'Vous êtes porteur d\'un projet de construction au Cameroun ?',
+          description: 'Félicitations! Nous imaginons très bien à quel point c\'est compliqué de le suivre depuis l\'étranger. C\'est pour cela que nous vous proposons une solution de surveillance complète en temps réel. Rapports quotidiens détaillés, vidéos aériennes HD et suivi de progrès - tout ce qu\'il faut pour garder l\'œil sur votre projet, peu importe où vous êtes.',
+          features: ['Rapports quotidiens détaillés', 'Vidéos aériennes HD', 'Suivi de progrès en temps réel', 'Alertes immédiates'],
+          image: '/services/premium-site-monitoring.jpg',
+        },
+        structural: {
+          title: 'Analyse et imagerie 3D',
+          intro: 'Vos structures métalliques ou bâtiments montrent des signes d\'usure ?',
+          description: 'Nous utilisons l\'imagerie 3D avancée pour analyser vos infrastructures, identifier les faiblesses structurelles et créer des modèles précis. Avec nos orthophotos géoréférencées et nuages de points détaillés, vous disposez de données complètes pour la maintenance préventive et les prises de décision stratégiques. Visualisez chaque détail de vos structures comme jamais auparavant.',
+          features: ['Modèles 3D haute résolution', 'Identification des faiblesses', 'Orthophotos géoréférencées', 'Rapports d\'analyse détaillés'],
+          image: '/services/premium-3d-modeling.jpg',
+        },
+        agricultural: {
+          title: 'Surveillance et suivi des projets agricoles',
+          intro: 'Vous souhaitez optimiser le rendement de vos plantations ?',
+          description: 'Notre technologie de surveillance agricole vous offre une vue en temps réel de vos cultures. Identifiez immédiatement les zones à faibles rendements, détectez les problèmes d\'irrigation et analysez la santé de vos plantations. Avec nos cartes de végétation et analyses de rendement, prenez des décisions éclairées pour maximiser votre productivité.',
+          features: ['Vue en temps réel des plantations', 'Zones à faibles rendements', 'Cartes de végétation', 'Alertes sur la santé des cultures'],
+          image: '/services/premium-site-monitoring.jpg',
+        },
+      },
     },
     about: {
       title: 'Qui sommes-nous ?',
@@ -60,13 +83,160 @@ export const translations = {
       },
     },
     gallery: {
-      title: 'Nos Réalisations',
-      description: 'Découvrez une sélection de nos plus beaux projets en action.',
+      title: 'Nos Services Spécialisés',
+      description: 'Découvrez nos solutions complètes adaptées à vos besoins professionnels.',
       filter: {
         all: 'Tous',
-        commercial: 'Commercial',
-        inspection: 'Inspection',
-        mapping: 'Cartographie',
+        inspection: 'Inspections',
+        surveys: 'Relevés',
+        maintenance: 'Maintenance',
+        training: 'Formation',
+        premium: 'Services Premium',
+      },
+      services: {
+        inspections: {
+          title: 'Inspections Prédictives',
+          description: 'Solutions d\'inspection avancées pour détecter les défauts avant qu\'ils ne deviennent problématiques.',
+          items: [
+            {
+              category: 'inspection',
+              title: 'Réseaux Électriques',
+              description: 'Inspection des pylônes d\'énergie et stations transformatrices',
+              details: 'Détection des défauts structuraux, corrosion et usure. Imagerie thermique pour identification des hotspots électriques.',
+              benefits: ['Prévention des pannes', 'Sécurité accrue', 'Réduction des coûts de maintenance'],
+              image: '/services/inspection-electrical.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Parcs Éoliens',
+              description: 'Contrôle des hélices et structures sans rotation manuelle',
+              details: 'Inspection détaillée des pales, nacelles et tours sans arrêt de production. Détection des microfissures et fatigue matériaux.',
+              benefits: ['Zéro arrêt de production', 'Détection précoce', 'Rapports détaillés'],
+              image: '/services/inspection-wind-farm.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Secteur Pétrolier (AIB)',
+              description: 'Inspection des appareils indépendants de pompage',
+              details: 'Surveillance des APB et installations pétrolières. Détection des fuites et dysfonctionnements.',
+              benefits: ['Conformité réglementaire', 'Sécurité optimale', 'Traçabilité complète'],
+              image: '/services/inspection-oil-industry.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Installations Industrielles',
+              description: 'Documentation RGB pour relevé de structures en hauteur',
+              details: 'Acquisition de données précises en 3D. Modélisation des structures pour analyse détaillée.',
+              benefits: ['Données précises', 'Documentation complète', 'Analyse structurelle'],
+              image: '/services/inspection-industrial.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Structures de Bâtiments',
+              description: 'Inspection des façades, toitures et éléments structuraux',
+              details: 'Détection des fissures, infiltrations et dégradations. Imagerie thermique pour isolation.',
+              benefits: ['Inspection sans risque', 'Rapidité accrue', 'Coûts réduits'],
+              image: '/services/inspection-buildings.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Réseaux Télécom',
+              description: 'Contrôle des antennes, câbles et structures d\'antennes',
+              details: 'Surveillance régulière des installations. Détection des dysfonctionnements.',
+              benefits: ['Uptime garanti', 'Maintenance préventive', 'Économies substantielles'],
+              image: '/services/inspection-telecom.jpg',
+            },
+          ],
+        },
+        surveys: {
+          title: 'Relevés et Suivis',
+          description: 'Cartographie précise et monitoring continu de vos infrastructures.',
+          items: [
+            {
+              category: 'surveys',
+              title: 'Topographie',
+              description: 'Relevés sur grandes étendues avec cartographies 2D/3D',
+            },
+            {
+              category: 'surveys',
+              title: 'Canalisations & Pipelines',
+              description: 'Suivi des lignes d\'oléoducs avec points de rapprochement précis',
+            },
+            {
+              category: 'surveys',
+              title: 'Suivi d\'Ouvrages',
+              description: 'Contrôle et surveillance de l\'avancement des chantiers',
+            },
+            {
+              category: 'surveys',
+              title: 'Environnement',
+              description: 'Relevés pour contrôle des décharges et assainissement',
+            },
+          ],
+        },
+        maintenance: {
+          title: 'Maintenance & Services Techniques',
+          description: 'Expertise en analyse et nettoyage de précision.',
+          items: [
+            {
+              category: 'maintenance',
+              title: 'Analyse en Cabinet',
+              description: 'Analyse d\'images RGB et infrarouges pour détection de défauts',
+            },
+            {
+              category: 'maintenance',
+              title: 'Hydrolavage de Précision',
+              description: 'Nettoyage haute pression des pales et panneaux solaires',
+            },
+            {
+              category: 'maintenance',
+              title: 'Support Technique',
+              description: 'Assistance et maintenance des équipements',
+            },
+          ],
+        },
+        training: {
+          title: 'Formation & Support Logistique',
+          description: 'Développez vos compétences et exploitez pleinement vos drones.',
+          items: [
+            {
+              category: 'training',
+              title: 'Entraînement de Pilotes',
+              description: 'Formation théorique et pratique rigoureuse',
+            },
+            {
+              category: 'training',
+              title: 'Unité Mobile de Surveillance',
+              description: 'Unité autonome alimentée par panneaux solaires',
+            },
+            {
+              category: 'training',
+              title: 'Support Opérationnel',
+              description: 'Assistance lors de vos missions sur le terrain',
+            },
+          ],
+        },
+        premium: {
+          title: 'Services Premium',
+          description: 'Solutions exclusives pour la diaspora et investisseurs.',
+          items: [
+            {
+              category: 'premium',
+              title: 'Surveillance de Chantiers',
+              description: 'Suivi temps réel des travaux de construction et agricoles',
+            },
+            {
+              category: 'premium',
+              title: 'Imagerie 3D & Modélisation',
+              description: 'Vues 3D, modèles et vidéos d\'infrastructures',
+            },
+            {
+              category: 'premium',
+              title: 'Rapports Détaillés',
+              description: 'Estimations d\'avancement et analyses complètes',
+            },
+          ],
+        },
       },
     },
     testimonials: {
@@ -152,6 +322,29 @@ export const translations = {
         features: ['Approved training', 'Recognized certification', 'Small groups', 'Personalized follow-up'],
         cta: 'Sign up for training',
       },
+      premium: {
+        construction: {
+          title: 'Construction Project Monitoring',
+          intro: 'Do you have a construction project in Cameroon?',
+          description: 'Congratulations! We understand how challenging it is to monitor it from abroad. That\'s why we offer a complete real-time monitoring solution. Detailed daily reports, HD aerial videos and progress tracking - everything you need to keep an eye on your project, no matter where you are.',
+          features: ['Detailed daily reports', 'HD aerial videos', 'Real-time progress tracking', 'Immediate alerts'],
+          image: '/services/premium-site-monitoring.jpg',
+        },
+        structural: {
+          title: '3D Analysis and Imaging',
+          intro: 'Do your metal structures or buildings show signs of wear?',
+          description: 'We use advanced 3D imaging to analyze your infrastructure, identify structural weaknesses and create precise models. With our georeferenced orthophotos and detailed point clouds, you have comprehensive data for preventive maintenance and strategic decision-making. Visualize every detail of your structures like never before.',
+          features: ['High-resolution 3D models', 'Weakness identification', 'Georeferenced orthophotos', 'Detailed analysis reports'],
+          image: '/services/premium-3d-modeling.jpg',
+        },
+        agricultural: {
+          title: 'Agricultural Project Monitoring',
+          intro: 'Want to optimize your crop yields?',
+          description: 'Our agricultural monitoring technology gives you a real-time view of your crops. Immediately identify zones with low yields, detect irrigation issues and analyze crop health. With our vegetation maps and yield analysis, make informed decisions to maximize your productivity.',
+          features: ['Real-time crop view', 'Low yield zones', 'Vegetation maps', 'Crop health alerts'],
+          image: '/services/premium-site-monitoring.jpg',
+        },
+      },
     },
     about: {
       title: 'About Us',
@@ -173,13 +366,175 @@ export const translations = {
       },
     },
     gallery: {
-      title: 'Our Work',
-      description: 'Discover a selection of our most beautiful projects in action.',
+      title: 'Our Specialized Services',
+      description: 'Discover our complete solutions tailored to your professional needs.',
       filter: {
         all: 'All',
-        commercial: 'Commercial',
-        inspection: 'Inspection',
-        mapping: 'Mapping',
+        inspection: 'Inspections',
+        surveys: 'Surveys',
+        maintenance: 'Maintenance',
+        training: 'Training',
+        premium: 'Premium',
+      },
+      services: {
+        inspections: {
+          title: 'Predictive Inspections',
+          description: 'Advanced inspection solutions to detect defects before they become problems.',
+          items: [
+            {
+              category: 'inspection',
+              title: 'Electrical Networks',
+              description: 'Inspection of power towers and transformer stations',
+              details: 'Detection of structural defects, corrosion and wear. Thermal imaging for hotspot identification.',
+              benefits: ['Failure prevention', 'Enhanced safety', 'Reduced maintenance costs'],
+              image: '/services/inspection-electrical.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Wind Farms',
+              description: 'Blade and structure control without manual rotation',
+              details: 'Detailed inspection of blades, nacelles and towers without production shutdown. Microfracture and material fatigue detection.',
+              benefits: ['Zero production downtime', 'Early detection', 'Detailed reports'],
+              image: '/services/inspection-wind-farm.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Oil Sector (AIB)',
+              description: 'Inspection of independent pumping units',
+              details: 'Monitoring of pump units and oil facilities. Detection of leaks and malfunctions.',
+              benefits: ['Regulatory compliance', 'Optimal safety', 'Complete traceability'],
+              image: '/services/inspection-oil-industry.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Industrial Facilities',
+              description: 'RGB documentation for high-altitude structure surveys',
+              details: 'Acquisition of precise 3D data. Structure modeling for detailed analysis.',
+              benefits: ['Precise data', 'Complete documentation', 'Structural analysis'],
+              image: '/services/inspection-industrial.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Building Structures',
+              description: 'Inspection of facades, roofs and structural elements',
+              details: 'Detection of cracks, leaks and degradation. Thermal imaging for insulation.',
+              benefits: ['Risk-free inspection', 'Increased speed', 'Reduced costs'],
+              image: '/services/inspection-buildings.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Telecom Networks',
+              description: 'Inspection of antennas, cables and antenna structures',
+              details: 'Regular monitoring of installations. Detection of malfunctions.',
+              benefits: ['Guaranteed uptime', 'Preventive maintenance', 'Substantial savings'],
+              image: '/services/inspection-telecom.jpg',
+            },
+            {
+              category: 'inspection',
+              title: 'Wind Farms',
+              description: 'Blade and structure control without manual rotation',
+            },
+            {
+              category: 'inspection',
+              title: 'Oil Sector (AIB)',
+              description: 'Inspection of independent pumping units',
+            },
+            {
+              category: 'inspection',
+              title: 'Industrial Facilities',
+              description: 'RGB documentation for high-altitude structure surveys',
+            },
+          ],
+        },
+        surveys: {
+          title: 'Surveys & Monitoring',
+          description: 'Precise mapping and continuous monitoring of your infrastructure.',
+          items: [
+            {
+              category: 'surveys',
+              title: 'Topography',
+              description: 'Large-scale surveys with 2D/3D mapping',
+            },
+            {
+              category: 'surveys',
+              title: 'Pipelines & Pipelines',
+              description: 'Pipeline line monitoring with precise approach points',
+            },
+            {
+              category: 'surveys',
+              title: 'Work Monitoring',
+              description: 'Control and monitoring of construction progress',
+            },
+            {
+              category: 'surveys',
+              title: 'Environment',
+              description: 'Surveys for landfill control and environmental remediation',
+            },
+          ],
+        },
+        maintenance: {
+          title: 'Maintenance & Technical Services',
+          description: 'Expertise in analysis and precision cleaning.',
+          items: [
+            {
+              category: 'maintenance',
+              title: 'Office Analysis',
+              description: 'RGB and infrared image analysis for defect detection',
+            },
+            {
+              category: 'maintenance',
+              title: 'Precision Pressure Washing',
+              description: 'High-pressure cleaning of blades and solar panels',
+            },
+            {
+              category: 'maintenance',
+              title: 'Technical Support',
+              description: 'Equipment maintenance and assistance',
+            },
+          ],
+        },
+        training: {
+          title: 'Training & Logistics Support',
+          description: 'Develop your skills and fully exploit your drones.',
+          items: [
+            {
+              category: 'training',
+              title: 'Pilot Training',
+              description: 'Rigorous theoretical and practical training',
+            },
+            {
+              category: 'training',
+              title: 'Mobile Surveillance Unit',
+              description: 'Autonomous unit powered by solar panels',
+            },
+            {
+              category: 'training',
+              title: 'Operational Support',
+              description: 'Assistance during your field missions',
+            },
+          ],
+        },
+        premium: {
+          title: 'Premium Services',
+          description: 'Exclusive solutions for diaspora and investors.',
+          items: [
+            {
+              category: 'premium',
+              title: 'Site Monitoring',
+              description: 'Real-time tracking of construction and agricultural work',
+            },
+            {
+              category: 'premium',
+              title: '3D Imaging & Modeling',
+              description: '3D views, models and videos of infrastructure',
+            },
+            {
+              category: 'premium',
+              title: 'Detailed Reports',
+              description: 'Progress estimates and comprehensive analysis',
+            },
+          ],
+        },
       },
     },
     testimonials: {
@@ -226,3 +581,5 @@ export const translations = {
     },
   },
 }
+
+export default translations
