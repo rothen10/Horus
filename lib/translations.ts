@@ -48,8 +48,8 @@ export const translations = {
           image: '/services/premium-site-monitoring.jpg',
         },
         structural: {
-          title: 'Analyse et imagerie 3D',
-          intro: 'Vos structures métalliques ou bâtiments montrent des signes d\'usure ?',
+          title: 'Inspection, visualisation 3D et modélisation d\'infrastructures',
+          intro: 'Vos structures métalliques, lignes Hautes tensions (et MT) ou bâtiments montrent des signes d\'usure ?',
           description: 'Nous utilisons l\'imagerie 3D avancée pour analyser vos infrastructures, identifier les faiblesses structurelles et créer des modèles précis. Avec nos orthophotos géoréférencées et nuages de points détaillés, vous disposez de données complètes pour la maintenance préventive et les prises de décision stratégiques. Visualisez chaque détail de vos structures comme jamais auparavant.',
           features: ['Modèles 3D haute résolution', 'Identification des faiblesses', 'Orthophotos géoréférencées', 'Rapports d\'analyse détaillés'],
           image: '/services/premium-3d-modeling.jpg',
@@ -331,8 +331,8 @@ export const translations = {
           image: '/services/premium-site-monitoring.jpg',
         },
         structural: {
-          title: '3D Analysis and Imaging',
-          intro: 'Do your metal structures or buildings show signs of wear?',
+          title: '3D Inspection, Visualization & Modeling of Infrastructures',
+          intro: 'Are your metal structures, high voltage lines (and MT) or buildings showing signs of wear?',
           description: 'We use advanced 3D imaging to analyze your infrastructure, identify structural weaknesses and create precise models. With our georeferenced orthophotos and detailed point clouds, you have comprehensive data for preventive maintenance and strategic decision-making. Visualize every detail of your structures like never before.',
           features: ['High-resolution 3D models', 'Weakness identification', 'Georeferenced orthophotos', 'Detailed analysis reports'],
           image: '/services/premium-3d-modeling.jpg',

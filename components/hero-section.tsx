@@ -40,6 +40,8 @@ export default function HeroSection() {
           playsInline
         >
           <source src="/videos/drone-footage-1.mp4" type="video/mp4" />
+          <source src="/videos/drone-footage-2.mp4" type="video/mp4" />
+          <source src="/videos/drone-footage-3.mp4" type="video/mp4" />
         </video>
       </div>
 
