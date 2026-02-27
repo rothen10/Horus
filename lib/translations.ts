@@ -345,7 +345,7 @@ export const translations = {
           image: '/services/premium-site-monitoring.jpg',
         },
       },
-    },
+    }, 
     about: {
       title: 'About Us',
       description: 'Horus has been your trusted partner in drone technology for 10 years.',
