@@ -253,7 +253,7 @@ export default function ContactSection() {
                 <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <a
-                href="https://wa.me/237656128888?text=Bonjour, j'aimerais discuter d'un projet drone. Pouvez-vous m'aider ?"
+                href="https://wa.me/237696792615?text=Bonjour, j'aimerais discuter d'un projet drone. Pouvez-vous m'aider ?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group"

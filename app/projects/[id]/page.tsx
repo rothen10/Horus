@@ -134,7 +134,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           <p className="text-foreground/70 mb-6">Contactez-nous pour discuter de votre projet drone</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`https://wa.me/237656128888?text=Bonjour, je suis intéressé par un projet similaire à "${project.title}". Pouvez-vous m'en dire plus ?`}
+              href={`https://wa.me/237696792615?text=Bonjour, je suis intéressé par un projet similaire à "${project.title}". Pouvez-vous m'en dire plus ?`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-accent text-accent-foreground rounded-full font-semibold hover:bg-accent/90 transition-all transform hover:scale-105"

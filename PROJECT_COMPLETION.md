@@ -47,7 +47,7 @@ Complete website rebuild from **Horus** to **Horus** - a professional drone serv
 #### WhatsApp Integration
 
 - Contact section now includes WhatsApp button
-- Phone number: +237 656 128 888
+- Phone number: +237 696792615
 - Pre-formatted messages for inquiries
 - Available on both contact form and project detail pages
 
@@ -63,7 +63,7 @@ Complete website rebuild from **Horus** to **Horus** - a professional drone serv
 
 - Address: Douala, Cameroun
 - Email: contact@horusdrones.cm
-- WhatsApp: +237 656 128 888
+- WhatsApp: +2237 696792615
 - Dual submit buttons (Email form + WhatsApp direct message)
 
 #### Gallery Section

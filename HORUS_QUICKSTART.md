@@ -40,7 +40,7 @@ Three ways to contact via WhatsApp (+237 656 128 888):
 - Name: Horus
 - Location: Douala, Cameroon
 - Email: contact@horusdrones.cm
-- WhatsApp: +237 656 128 888
+- WhatsApp: +237 696 792 615
 
 **Services:**
 

@@ -106,7 +106,6 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
           ))}
         </div>
 
@@ -118,7 +117,7 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs text-foreground/60">Téléphone</div>
-              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">+237 656 128 888</div>
+              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">+237 696792615</div>
             </div>
           </a>
 
