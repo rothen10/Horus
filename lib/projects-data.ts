@@ -102,7 +102,7 @@ export const projectsData: Project[] = [
     description: 'Cinématographie professionnelle',
     fullDescription:
       'Captation cinématographique d\'un événement corporatif majeur avec 2000 participants. Drone show synchronisé avec animations et montage professionnel post-production.',
-    client: 'Gala DroneServ Annual Conference',
+    client: 'Gala Horus Annual Conference',
     date: 'Mai 2024',
     duration: '3 jours',
     technologies: ['DJI M300', 'Caméra 8K', 'Montage professionnel'],

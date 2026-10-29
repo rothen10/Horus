@@ -65,7 +65,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
                 <span className="text-accent-foreground font-bold text-lg">H</span>
               </div>
-              <span className="text-lg font-bold text-foreground">DroneServ</span>
+              <span className="text-lg font-bold text-foreground">Horus</span>
             </Link>
 
             <p className="text-foreground/70 text-sm leading-relaxed mb-6">
@@ -121,13 +121,13 @@ export default function Footer() {
             </div>
           </a>
 
-          <a href="mailto:contact@DroneServ.fr" className="flex items-center gap-3 group">
+          <a href="mailto:contact@Horus.fr" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-lg bg-accent/10 group-hover:bg-accent/20 flex items-center justify-center transition-colors">
               <Mail className="w-5 h-5 text-accent" />
             </div>
             <div>
               <div className="text-xs text-foreground/60">Email</div>
-              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">contact@DroneServ.fr</div>
+              <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">contact@Horus.fr</div>
             </div>
           </a>
 
@@ -145,7 +145,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-sm text-foreground/60">
-            © {currentYear} DroneServ. Tous droits réservés.
+            © {currentYear} Horus. Tous droits réservés.
           </div>
 
           <div className="flex items-center gap-6">

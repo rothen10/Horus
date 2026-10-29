@@ -1,8 +1,8 @@
-# DroneServ Drone Services - Quick Start Guide
+# Horus Drone Services - Quick Start Guide
 
 ## What's New
 
-Your website has been fully transformed from DroneServ to **DroneServ** - a professional drone services company in Douala, Cameroon. Here's what you can do:
+Your website has been fully transformed from Horus to **Horus** - a professional drone services company in Douala, Cameroon. Here's what you can do:
 
 ## Core Features
 
@@ -37,9 +37,9 @@ Three ways to contact via WhatsApp (+237 656 128 888):
 
 **Company Details:**
 
-- Name: DroneServ
+- Name: Horus
 - Location: Douala, Cameroon
-- Email: contact@DroneServdrones.cm
+- Email: contact@Horusdrones.cm
 - WhatsApp: +237 696 792 615
 
 **Services:**
@@ -68,8 +68,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: "your-email@DroneServ.cm",
-    link: "mailto:your-email@DroneServ.cm",
+    details: "your-email@Horus.cm",
+    link: "mailto:your-email@Horus.cm",
   },
   // ... other info
 ];
@@ -85,7 +85,7 @@ Edit `/app/layout.tsx` for SEO metadata and titles.
 
 ### Change Logo
 
-Replace the SVG in `/components/header.tsx` or use an image at `/public/DroneServ-logo.svg`.
+Replace the SVG in `/components/header.tsx` or use an image at `/public/Horus-logo.svg`.
 
 ## File Navigation
 
@@ -144,4 +144,4 @@ Ready for deployment to:
 
 **Version:** 1.0  
 **Last Updated:** 2024  
-**Company:** DroneServ Drone Services
+**Company:** Horus Drone Services

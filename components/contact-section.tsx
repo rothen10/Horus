@@ -67,8 +67,8 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: t('contact.info.email'),
-      details: 'contact@DroneServdrones.cm',
-      link: 'mailto:contact@DroneServdrones.cm',
+      details: 'contact@Horusdrones.cm',
+      link: 'mailto:contact@Horusdrones.cm',
     },
     {
       icon: Phone,
