@@ -73,8 +73,8 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: t('contact.info.phone'),
-      details: '+237 656 128 888',
-      link: 'https://wa.me/237656128888',
+      details: '+237 696 792 615',
+      link: 'https://wa.me/237696792615',
     },
     {
       icon: MapPin,
@@ -208,7 +208,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="+237 656 128 888"
+                  placeholder="+237 696792615"
                 />
               </div>
             </div>
