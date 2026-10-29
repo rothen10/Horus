@@ -31,7 +31,7 @@ export default function Header() {
               </g>
             </svg>
           </div>
-          <span className="text-xl font-bold text-foreground hidden sm:inline">Horus</span>
+          <span className="text-xl font-bold text-foreground hidden sm:inline">DroneServ</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata = {
-  title: 'Nos Projets - Horus',
+  title: 'Nos Projets - DroneServ',
   description: 'Découvrez tous nos projets de services de drones à Douala',
 }
 

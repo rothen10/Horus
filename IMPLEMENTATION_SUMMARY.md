@@ -5,7 +5,7 @@ Version: 1.0
 
 ## Vue d'ensemble
 
-Implémentation complète d'un système de gestion du thème (Dark/Light) et de la langue (Français/Anglais) pour le site Horus.
+Implémentation complète d'un système de gestion du thème (Dark/Light) et de la langue (Français/Anglais) pour le site DroneServ.
 
 ## Fichiers Créés
 

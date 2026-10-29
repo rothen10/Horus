@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Le site Horus dispose d'un système complet de gestion du thème (Dark/Light mode) et de langue (Français/Anglais). Ces fonctionnalités sont implémentées avec des React Contexts et sont entièrement client-side.
+Le site DroneServ dispose d'un système complet de gestion du thème (Dark/Light mode) et de langue (Français/Anglais). Ces fonctionnalités sont implémentées avec des React Contexts et sont entièrement client-side.
 
 ## Architecture
 

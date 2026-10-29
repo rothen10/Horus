@@ -12,7 +12,7 @@ const testimonials = [
     company: 'Ferme Moderne SA',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
     testimonial:
-      'Horus a transformé notre approche agricole. Les solutions proposées ont augmenté notre rendement de 35% en une saison.',
+      'DroneServ a transformé notre approche agricole. Les solutions proposées ont augmenté notre rendement de 35% en une saison.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const testimonials = [
     company: 'Immobilier Prestige',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
     testimonial:
-      'Les vidéos aériennes produites par Horus ont accéléré nos ventes de 40%. Qualité cinématographique exceptionnelle.',
+      'Les vidéos aériennes produites par DroneServ ont accéléré nos ventes de 40%. Qualité cinématographique exceptionnelle.',
     rating: 5,
   },
   {
@@ -42,7 +42,7 @@ const testimonials = [
     company: 'Events Luxe',
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop',
     testimonial:
-      'Pour nos événements corporatifs, Horus apporte toujours une touche spectaculaire. Professionnel et innovant.',
+      'Pour nos événements corporatifs, DroneServ apporte toujours une touche spectaculaire. Professionnel et innovant.',
     rating: 5,
   },
 ]

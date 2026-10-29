@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const project = projectsData.find((p) => p.id === parseInt(params.id))
   return {
-    title: `${project?.title} - Horus Drone Services`,
+    title: `${project?.title} - DroneServ Drone Services`,
     description: project?.fullDescription,
   }
 }

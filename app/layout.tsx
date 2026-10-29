@@ -10,13 +10,13 @@ const geist = Geist({ subsets: ['latin'] })
 const geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Horus - Services Professionnels de Drones à Douala',
+  title: 'DroneServ - Services Professionnels de Drones à Douala',
   icons: {
       icon: "/logo.png", // Ton PNG comme favicon
       apple: "/logo.png", // Pour iOS
     },
   description:
-    'Horus : solutions complètes de services de drones à Douala, Cameroun. Ventes, maintenance, formations et inspection aérienne professionnelle.',
+    'DroneServ : solutions complètes de services de drones à Douala, Cameroun. Ventes, maintenance, formations et inspection aérienne professionnelle.',
   generator: 'Ro10',
   keywords: [
     'drone',
@@ -30,26 +30,26 @@ export const metadata: Metadata = {
     'surveillance drone',
   ],
   robots: 'index, follow',
-  authors: [{ name: 'Horus Drone Services' }],
+  authors: [{ name: 'DroneServ Drone Services' }],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://horus-drones.cm',
-    siteName: 'Horus Drone Services',
-    title: 'Horus - Services Professionnels de Drones',
+    url: 'https://DroneServ-drones.cm',
+    siteName: 'DroneServ Drone Services',
+    title: 'DroneServ - Services Professionnels de Drones',
     description: 'Solutions complètes de drones à Douala, Cameroun',
     images: [
       {
-        url: 'https://horus-drones.cm/og-image.jpg',
+        url: 'https://DroneServ-drones.cm/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Horus - Services Professionnels de Drones',
+        alt: 'DroneServ - Services Professionnels de Drones',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Horus - Services Professionnels de Drones',
+    title: 'DroneServ - Services Professionnels de Drones',
     description: 'Solutions complètes de drones à Douala, Cameroun',
   },
 }
